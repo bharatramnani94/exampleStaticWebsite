@@ -14,6 +14,8 @@
 
 .experience-details__image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .experience-details__desc {
@@ -35,6 +37,10 @@
 
   .experience-details {
     grid-template-columns: 1fr;
+  }
+
+  .experience-details__image {
+    height: auto;
   }
 
   .experience-details__title {
