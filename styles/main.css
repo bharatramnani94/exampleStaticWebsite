@@ -9,8 +9,6 @@ a {
   text-decoration: none;
 }
 
-
-
 :root {
   --fontSerif: 'Neuton', serif;
   --fontSansSerif: Roboto, sans-serif;
@@ -91,134 +89,6 @@ body {
   opacity: 0;
 }
 
-.experiences {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 22rem);
-}
-
-.experience {
-  background-size: cover;
-  padding: 6rem 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-  position: relative;
-}
-
-.experience:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
-  will-change: opacity;
-}
-
-.experience:hover::before {
-  transition: 0.5s;
-  opacity: 0;
-}
-
-
-.experience > * {
-  display: block;
-  margin-bottom: 1rem;
-  max-width: 30ch;
-  z-index: 1;
-}
-
-.experience .experience__title {
-  font-size: 4rem;
-  font-family: var(--fontSerif);
-  max-width: 29rem;
-}
-
-.experience .experience__desc {
-  opacity: 0.8;
-  line-height: 1.4;
-  margin-bottom: 0;
-}
-
-.experience .experience__tag {
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-size: 0.8rem;
-}
-
-.experience__symbol {
-  color: transparent;
-  transform: scale(0.7);
-  position: relative;
-}
-
-
-.experience__symbol:after {
-  content: '';
-  position: absolute;
-  left: -1px;
-  width: 1rem;
-  border: 2px solid white;
-  top: -1px;
-  height: 1rem;
-  border-radius: 50%;
-}
-
-.experience__symbol:before {
-  content: '';
-  position: absolute;
-  left: -0.5rem;
-  width: 2rem;
-  height: 2px;
-  top: calc(50% - 1px);
-  background: white;
-}
-
-.experience.experience--1 {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-  background-image: url(../images/earth-1.jpg);
-}
-
-.experience.experience--2 {
-  background-image: url(../images/earth-3.jpg);
-  grid-row: 1 / span 2;
-}
-
-.experience.experience--3 {
-  background-image: url(../images/water-7.jpg);
-  grid-row: 3 / span 2;
-}
-
-.experience.experience--4 {
-  background-image: url(../images/water-4.jpg);
-  grid-column: 2 / span 2;
-}
-
-.experience.experience--5 {
-  background-image: url(../images/earth-6.jpg);
-  grid-column: 2 / span 2;
-}
-
-
-.experience.experience--4,
-.experience.experience--5 {
-  justify-content: center;
-}
-
-.experience.experience--4 .experience__symbol,
-.experience.experience--4 .experience__desc,
-.experience.experience--5 .experience__symbol,
-.experience.experience--5 .experience__desc {
-  display: none;
-}
-
 .footer {
   font-size: 0.8rem;
   opacity: 0.6;
@@ -230,14 +100,5 @@ body {
   }
   .header .nav .nav__link {
     margin-left: 1rem;
-  }
-  .experiences {
-    display: block;
-  }
-  .experience.experience--4 .experience__symbol,
-  .experience.experience--4 .experience__desc,
-  .experience.experience--5 .experience__symbol,
-  .experience.experience--5 .experience__desc {
-    display: block;
   }
 }

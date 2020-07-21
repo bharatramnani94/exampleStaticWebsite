@@ -1,0 +1,46 @@
+.experience-details {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.experience-details__title {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 1;
+  grid-column: 1 / -1;
+}
+
+.experience-details__image {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.experience-details__desc {
+  max-width: 30rem;
+}
+
+.experience-details__desc p {
+  padding-bottom: 1rem;
+  opacity: 0.8;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+
+  .experience-details {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-details__title {
+    font-size: 2.4rem;
+  }
+
+  .experience-details__image {
+    margin-left: -2rem;
+    width: calc(100% + 4rem);
+  }
+
+}
