@@ -3,6 +3,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
+  transition: 1s;
+  opacity: 1;
+  filter: none;
+}
+
+.loading .experience-details {
+  opacity: 0.4;
+  filter: blur(10px) grayscale(1);
 }
 
 .experience-details__title {

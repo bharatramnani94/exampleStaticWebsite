@@ -19,10 +19,16 @@ function findExperienceById(id) {
   return activeExperience || allExperiences[0];
 }
 
+function disableLoading() {
+  const bodyEl = document.querySelector("body");
+  bodyEl.classList.remove("loading");
+}
+
 function main() {
   const id = getIdFromUrl();
   const activeExperience = findExperienceById(id);
   populateData(activeExperience);
+  disableLoading();
 }
 
 main();
