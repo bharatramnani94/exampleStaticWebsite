@@ -14,7 +14,6 @@
 
 .experience-details__image {
   width: 100%;
-  max-width: 40rem;
 }
 
 .experience-details__desc {
@@ -26,6 +25,10 @@
   opacity: 0.8;
   font-weight: 300;
   line-height: 1.5;
+}
+
+.experience-details__desc p:first-of-type {
+  font-size: 1.4em;
 }
 
 @media screen and (max-width: 768px) {
