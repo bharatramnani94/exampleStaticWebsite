@@ -88,42 +88,37 @@
   background: white;
 }
 
-.experience.experience--1 {
+.experience:nth-of-type(1) {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
-  background-image: url(../images/earth-1.jpg);
 }
 
-.experience.experience--2 {
-  background-image: url(../images/earth-3.jpg);
+.experience:nth-of-type(2) {
   grid-row: 1 / span 2;
 }
 
-.experience.experience--3 {
-  background-image: url(../images/water-7.jpg);
+.experience:nth-of-type(3) {
   grid-row: 3 / span 2;
 }
 
-.experience.experience--4 {
-  background-image: url(../images/water-4.jpg);
+.experience:nth-of-type(4) {
   grid-column: 2 / span 2;
 }
 
-.experience.experience--5 {
-  background-image: url(../images/earth-6.jpg);
+.experience:nth-of-type(5) {
   grid-column: 2 / span 2;
 }
 
 
-.experience.experience--4,
-.experience.experience--5 {
+.experience:nth-of-type(4),
+.experience:nth-of-type(5) {
   justify-content: center;
 }
 
-.experience.experience--4 .experience__symbol,
-.experience.experience--4 .experience__desc,
-.experience.experience--5 .experience__symbol,
-.experience.experience--5 .experience__desc {
+.experience:nth-of-type(4) .experience__symbol,
+.experience:nth-of-type(4) .experience__desc,
+.experience:nth-of-type(5) .experience__symbol,
+.experience:nth-of-type(5) .experience__desc {
   display: none;
 }
 
@@ -131,10 +126,10 @@
   .experiences {
     display: block;
   }
-  .experience.experience--4 .experience__symbol,
-  .experience.experience--4 .experience__desc,
-  .experience.experience--5 .experience__symbol,
-  .experience.experience--5 .experience__desc {
+  .experience:nth-of-type(4) .experience__symbol,
+  .experience:nth-of-type(4) .experience__desc,
+  .experience:nth-of-type(5) .experience__symbol,
+  .experience:nth-of-type(5) .experience__desc {
     display: block;
   }
 }
