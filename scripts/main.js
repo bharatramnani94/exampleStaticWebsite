@@ -9,7 +9,7 @@ const experiences = [
   {
     id: "2",
     title: "Cross the mountains",
-    tag: "Sky",
+    tag: "Air",
     imageName: "earth-3.jpg",
     desc: `Challenge yourself physically and mentally and reach "the steps to heaven".`,
   },
