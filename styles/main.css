@@ -84,6 +84,14 @@ body {
 .header .nav .nav__link.nav__link--air:hover { color: var(--colorAir); }
 .header .nav .nav__link.nav__link--water:hover { color: var(--colorWater); }
 
+.header .nav .nav__link--active {
+  text-decoration: line-through;
+}
+
+.header .nav .nav__link--active:before {
+  height: 6px;
+}
+
 .header .nav .nav__link:hover:before {
   transition: opacity 0.3s, transform 0.5s;
   transform: translateY(-1.2rem);
