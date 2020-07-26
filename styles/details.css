@@ -41,6 +41,23 @@
   font-size: 1.4em;
 }
 
+.experience__back-button {
+  padding: 0.6rem 2rem;
+  display: inline-block;
+  margin-left: -2rem;
+  margin-bottom: -0.6rem;
+  transition: 0.3s;
+  opacity: 0.6;
+  text-transform: uppercase;
+  text-decoration: underline;
+  will-change: letter-spacing;
+}
+
+.experience__back-button:hover {
+  opacity: 1;
+  letter-spacing: 2px;
+}
+
 @media screen and (max-width: 768px) {
 
   .experience-details {
