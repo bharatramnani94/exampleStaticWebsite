@@ -2,7 +2,7 @@ const experiences = [
   {
     id: "1",
     title: "Cave and Canyon Trail",
-    tag: "Featured",
+    tag: "Earth",
     imageName: "earth-1.jpg",
     desc: `Go to Las Vegas and check out the epic Canyon trails and discover some awesome hidden caves.`,
   },
@@ -16,7 +16,7 @@ const experiences = [
   {
     id: "3",
     title: "Ride the shark waves",
-    tag: "Experiences",
+    tag: "Water",
     imageName: "water-7.jpg",
     desc: `We'll take you to Hawaii where you can live a lifelong dream many people have - surfing among the sharks.`,
   },
